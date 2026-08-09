@@ -1,72 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NewDiwa - Game Hub</title>
+  <title>NewDiwa - Game Hub</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>🎮 NewDiwa</h1>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
 
-    <nav>
+      <a class="brand" href="#">
+        <span class="brand-icon">🎮</span>
+        <span>NewDiwa</span>
+      </a>
+
+      <nav>
         <a href="#">Home</a>
         <a href="#games">Games</a>
-    </nav>
-</header>
+      </nav>
 
-<section class="hero">
+    </div>
+  </header>
 
-    <h2>🔥 Latest Games</h2>
 
-    <p>Find your favourite games</p>
+  <!-- HERO SECTION -->
+  <section class="hero">
 
-    <input
-        type="text"
-        id="searchInput"
-        placeholder="🔎 Search Games..."
-    >
+    <div class="hero-overlay"></div>
 
-</section>
+    <div class="hero-content">
 
-<section id="games">
+      <h1>ALL DIWA GAMES</h1>
 
-    <h2>🎮 Popular Games</h2>
+      <p>
+        Download Diwa All Games, New Diwa Games &
+        <br class="desktop-only">
+        All Diwa Rummy App, All Diwa Game
+      </p>
 
-    <div class="game-container">
 
-        <div class="game">
-            <div class="game-image">🎮</div>
-            <h3>Shadow Arena</h3>
-            <p>Action Game</p>
-            <button>Download</button>
-        </div>
+      <!-- SEARCH -->
+      <div class="search-wrap">
 
-        <div class="game">
-            <div class="game-image">🏎️</div>
-            <h3>Turbo Racer</h3>
-            <p>Racing Game</p>
-            <button>Download</button>
-        </div>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="App search"
+          aria-label="Search games"
+        >
 
-        <div class="game">
-            <div class="game-image">🧩</div>
-            <h3>Brain Puzzle</h3>
-            <p>Puzzle Game</p>
-            <button>Download</button>
-        </div>
+        <button
+          type="button"
+          id="searchButton"
+          aria-label="Search"
+        >
+          🔍
+        </button>
+
+      </div>
+
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-row">
+
+        <a href="#" aria-label="Social">𝕏</a>
+
+        <a href="#" aria-label="Telegram">✈</a>
+
+        <a href="#" aria-label="Social">𝕏</a>
+
+        <a href="#" aria-label="Social">𝕏</a>
+
+        <a href="#" aria-label="Social">𝕏</a>
+
+        <a href="#" aria-label="Social">𝕏</a>
+
+      </div>
 
     </div>
 
-</section>
+  </section>
 
-<script src="script.js"></script>
+
+
+  <!-- GAMES -->
+  <main id="games">
+
+    <h2 class="section-title">
+      Latest Apps
+    </h2>
+
+
+    <div class="game-container" id="gameList">
+
+
+      <!-- SHADOW ARENA -->
+      <article
+        class="game"
+        data-name="shadow arena action game"
+      >
+
+        <div class="game-image game-image-1">
+          🎮
+        </div>
+
+        <div class="game-content">
+
+          <h3>
+            Shadow Arena
+          </h3>
+
+          <p>
+            Action Game
+          </p>
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <a
+            class="download-btn"
+            href="#"
+            onclick="return noLink(event)"
+          >
+            Download APK
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- TURBO RACER -->
+      <article
+        class="game"
+        data-name="turbo racer racing game"
+      >
+
+        <div class="game-image game-image-2">
+          🏎️
+        </div>
+
+        <div class="game-content">
+
+          <h3>
+            Turbo Racer
+          </h3>
+
+          <p>
+            Racing Game
+          </p>
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <a
+            class="download-btn"
+            href="#"
+            onclick="return noLink(event)"
+          >
+            Download APK
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- BRAIN PUZZLE -->
+      <article
+        class="game"
+        data-name="brain puzzle puzzle game"
+      >
+
+        <div class="game-image game-image-3">
+          🧩
+        </div>
+
+        <div class="game-content">
+
+          <h3>
+            Brain Puzzle
+          </h3>
+
+          <p>
+            Puzzle Game
+          </p>
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <a
+            class="download-btn"
+            href="#"
+            onclick="return noLink(event)"
+          >
+            Download APK
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+  <!-- TELEGRAM BUTTON -->
+  <a
+    class="telegram-bar"
+    href="#"
+    onclick="return noLink(event)"
+  >
+
+    <span class="telegram-icon">
+      ✈
+    </span>
+
+    <span>
+      JOIN TELEGRAM NOW
+    </span>
+
+  </a>
+
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
 
 </body>
 </html>
