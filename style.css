@@ -974,3 +974,24 @@ main {
   }
 
 }
+.telegram-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+}
+
+.telegram-icon svg {
+  width: 27px;
+  height: 27px;
+
+  fill: #168ee8;
+  display: block;
+}
