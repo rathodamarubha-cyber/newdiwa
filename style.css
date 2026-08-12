@@ -265,3 +265,29 @@ footer p {
     object-fit: cover;
     display: block;
 }
+/* SEARCH BOX */
+
+.search-box {
+    max-width: 600px;
+    margin: 25px auto 35px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid #34405f;
+    outline: none;
+    background: #11172a;
+    color: white;
+    font-size: 16px;
+}
+
+.search-box input::placeholder {
+    color: #8f98ac;
+}
+
+.search-box input:focus {
+    border-color: #ffd21c;
+    box-shadow: 0 0 15px rgba(255, 210, 28, 0.2);
+}
