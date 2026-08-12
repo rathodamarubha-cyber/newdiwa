@@ -1,248 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>NewDiwa - Game Hub</title>
+    <title>NewDiwa - Latest Games</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-
-    <div class="top">
-      <div class="logo">
-        🎮 <span>NewDiwa</span>
-      </div>
-
-      <button class="close-btn" id="closeBtn">×</button>
-    </div>
+<header class="header">
+    <div class="logo">🎮 NEWDIWA</div>
 
     <nav>
-      <a href="#home">Home</a>
-      <a href="#games">Games</a>
-      <a href="#apps">Apps</a>
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
     </nav>
+</header>
 
-  </header>
 
-
-  <!-- HERO -->
-  <section class="hero" id="home">
+<section class="hero" id="home">
 
     <div class="hero-content">
 
-      <span class="small-title">WELCOME TO NEWDIWA</span>
+        <p class="small-title">🔥 LATEST GAME & APPS</p>
 
-      <h1>🔥 Latest Games</h1>
+        <h1>Download Your Favourite Games</h1>
 
-      <p>
-        Find your favourite games and apps
-      </p>
+        <p>
+            Discover latest games, apps and updates
+            in one place.
+        </p>
 
-      <div class="search-box">
+        <div class="buttons">
 
-        <span>🔎</span>
+            <a href="#games" class="download-btn">
+                🎮 Explore Games
+            </a>
 
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search Games..."
-        >
+            <a href="https://t.me/" class="telegram-btn">
+                ✈️ Join Telegram
+            </a>
 
-      </div>
+        </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- GAMES -->
-  <section class="games-section" id="games">
+<section class="games-section" id="games">
 
-    <div class="section-heading">
+    <h2>🔥 Latest Games</h2>
 
-      <h2>🎮 Popular Games</h2>
-
-      <span id="gameCount"></span>
-
-    </div>
-
-
-    <div class="game-container" id="gameContainer">
-
-
-      <!-- GAME 1 -->
-      <div class="game-card" data-name="gold rummy ">
-
-        <div class="app-image">
-    <img src="gold-rummy.png" alt="Gold Rummy">
-        </div>
-
-        <h3> gold Game </h3>
-
-        <p>Action Game</p>
-
-        <button
-          class="game-btn"
-          data-game="gold rummy >
-          download         </button>
-
-      </div>
-
-
-      <!-- GAME 2 -->
-      <div class="game-card" data-name="Turbo Racer">
-
-        <div class="game-image">
-          🏎️
-        </div>
-
-        <h3>Turbo Racer</h3>
-
-        <p>Racing Game</p>
-
-        <button
-          class="game-btn"
-          data-game="Turbo Racer">
-          View Game
-        </button>
-
-      </div>
-
-
-      <!-- GAME 3 -->
-      <div class="game-card" data-name="Brain Puzzle">
-
-        <div class="game-image">
-          🧩
-        </div>
-
-        <h3>Brain Puzzle</h3>
-
-        <p>Puzzle Game</p>
-
-        <button
-          class="game-btn"
-          data-game="Brain Puzzle">
-          View Game
-        </button>
-
-      </div>
-
-
-      <!-- GAME 4 -->
-      <div class="game-card" data-name="Space Quest">
-
-        <div class="game-image">
-          🚀
-        </div>
-
-        <h3>Space Quest</h3>
-
-        <p>Adventure Game</p>
-
-        <button
-          class="game-btn"
-          data-game="Space Quest">
-          View Game
-        </button>
-
-      </div>
-
-
-      <!-- GAME 5 -->
-      <div class="game-card" data-name="Ninja Run">
-
-        <div class="game-image">
-          🥷
-        </div>
-
-        <h3>Ninja Run</h3>
-
-        <p>Arcade Game</p>
-
-        <button
-          class="game-btn"
-          data-game="Ninja Run">
-          View Game
-        </button>
-
-      </div>
-
-
-      <!-- GAME 6 -->
-      <div class="game-card" data-name="Word Master">
-
-        <div class="game-image">
-          🔤
-        </div>
-
-        <h3>Word Master</h3>
-
-        <p>Puzzle Game</p>
-
-        <button
-          class="game-btn"
-          data-game="Word Master">
-          View Game
-        </button>
-
-      </div>
-
-
-    </div>
-
-    <div id="noResults">
-      😕 No games found
-    </div>
-
-  </section>
-
-
-  <!-- APPS -->
-  <section class="apps-section" id="apps">
-
-    <h2>📱 Latest Apps</h2>
-
-    <div class="apps-container">
-
-      <div class="app-box">
-        ⭐ Featured Apps
-      </div>
-
-      <div class="app-box">
-        🔥 New Releases
-      </div>
-
-      <div class="app-box">
-        🛠️ Useful Tools
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer>
-
-    <p>
-      © 2026 NewDiwa • Game Hub
+    <p class="section-text">
+        Check out our latest games and apps.
     </p>
 
-  </footer>
+
+    <div class="game-container">
 
 
-  <!-- MESSAGE -->
-  <div id="message" class="message"></div>
+        <!-- GAME 1 -->
+
+        <div class="game-card">
+
+            <div class="game-image">
+                🎮
+            </div>
+
+            <div class="game-content">
+
+                <h3>Diwa X</h3>
+
+                <p>
+                    Latest version game and app information.
+                </p>
+
+                <div class="game-info">
+
+                    <span>📱 Android</span>
+                    <span>🆕 Latest</span>
+
+                </div>
+
+                <a href="#" class="download-btn full">
+                    📥 Download
+                </a>
+
+            </div>
+
+        </div>
 
 
-  <script src="script.js"></script>
+        <!-- GAME 2 -->
+
+        <div class="game-card">
+
+            <div class="game-image">
+                🎰
+            </div>
+
+            <div class="game-content">
+
+                <h3>Game 2</h3>
+
+                <p>
+                    New gaming app and latest update.
+                </p>
+
+                <div class="game-info">
+
+                    <span>📱 Android</span>
+                    <span>🆕 New</span>
+
+                </div>
+
+                <a href="#" class="download-btn full">
+                    📥 Download
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- GAME 3 -->
+
+        <div class="game-card">
+
+            <div class="game-image">
+                🏆
+            </div>
+
+            <div class="game-content">
+
+                <h3>Game 3</h3>
+
+                <p>
+                    Explore the latest gaming experience.
+                </p>
+
+                <div class="game-info">
+
+                    <span>📱 Android</span>
+                    <span>⚡ Fast</span>
+
+                </div>
+
+                <a href="#" class="download-btn full">
+                    📥 Download
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="telegram-section" id="contact">
+
+    <h2>📢 Join Our Telegram</h2>
+
+    <p>
+        Get latest game updates and new releases.
+    </p>
+
+    <a href="https://t.me/" class="telegram-btn">
+        ✈️ Join Telegram Channel
+    </a>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 NewDiwa. All Rights Reserved.</p>
+
+    <p>
+        Download apps only from trusted and authorized sources.
+    </p>
+
+</footer>
+
 
 </body>
 </html>
